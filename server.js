@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Ruta para leer y enviar el contenido del archivo de texto
 app.get('/api/datos', (req, res) => {
-    const filePath = './data/datos.txt';
+    const filePath = './data/data.txt';
 
     // Leer el archivo de forma asíncrona
     fs.readFile(filePath, 'utf8', (err, data) => {
